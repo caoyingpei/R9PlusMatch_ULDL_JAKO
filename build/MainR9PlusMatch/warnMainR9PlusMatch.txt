@@ -1,0 +1,46 @@
+missing module named 'win32com.gen_py' - imported by win32com, C:\Python34\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_win32comgenpy.py
+missing module named pyimod03_importers - imported by C:\Python34\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_pkgres.py
+missing module named __main__ - imported by pkg_resources
+missing module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes
+missing module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection
+missing module named _sysconfigdata - imported by sysconfig
+missing module named 'com.sun' - imported by appdirs
+missing module named com - imported by appdirs
+missing module named _winreg - imported by appdirs
+missing module named __builtin__ - imported by pyparsing, paramiko.py3compat
+missing module named ordereddict - imported by pyparsing
+missing module named six.moves.map - imported by six.moves, pkg_resources
+missing module named six.moves.filter - imported by six.moves, pkg_resources
+missing module named 'six.moves.urllib' - imported by 'six.moves.urllib'
+runtime module named six.moves - imported by pkg_resources, 'six.moves.urllib', cryptography.x509.general_name, cryptography.hazmat.backends.openssl.decode_asn1
+missing module named StringIO - imported by six, paramiko.py3compat, progressbar.six
+missing module named resource - imported by posix, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named posix - imported by os, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named _posixsubprocess - imported by subprocess, multiprocessing.util, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named 'org.python' - imported by pickle, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py, xml.sax
+missing module named ce - imported by os, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named readline - imported by cmd, code, pdb, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+excluded module named _frozen_importlib - imported by importlib, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named 'java.lang' - imported by platform, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named termios - imported by tty, getpass, progressbar.utils, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named grp - imported by tarfile, shutil, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named _dummy_threading - imported by dummy_threading, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named pwd - imported by posixpath, tarfile, shutil, http.server, webbrowser, distutils.util, getpass, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named org - imported by copy, C:\Users\T450S\workspace\PY_CYP\R9PlusMatch_ULDL_JAKO\MainR9PlusMatch.py
+missing module named fcntl - imported by paramiko.agent, progressbar.utils
+missing module named blessings - imported by progressbar.utils
+missing module named ipykernel - imported by progressbar.utils
+missing module named IPython - imported by progressbar.utils
+missing module named cStringIO - imported by paramiko.py3compat, progressbar.six
+missing module named copy_reg - imported by cStringIO
+missing module named UserDict - imported by paramiko.hostkeys
+missing module named 'cryptography.hazmat.bindings._commoncrypto' - imported by cryptography.hazmat.bindings.commoncrypto.binding
+missing module named thread - imported by paramiko.win_pageant
+missing module named gssapi - imported by paramiko.ssh_gss
