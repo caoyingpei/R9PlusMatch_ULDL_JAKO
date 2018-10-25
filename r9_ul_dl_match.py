@@ -370,7 +370,10 @@ class R9UlDlMatch():
             
         
         cnt = UlFrameNum - DlFrameNum
-
+        cnt = (cnt-2*(cnt//26))//4-2
+        cnt = cnt//2
+        print('UlFrameNum %d',UlFrameNum)
+        print('DlFrameNum %d',DlFrameNum)
         if cnt > 0 :
             dlhead = 0 
             ulhead = cnt
@@ -381,8 +384,8 @@ class R9UlDlMatch():
         ultail =  ulhead+self.r9_get_voice_file_total_framenum(ulfile_Loc,'UL')
         dltail  = dlhead+self.r9_get_voice_file_total_framenum(dlfile_Loc,'DL')
         
-        #print(dlhead,'-',dltail)
-        #print(ultail,'-',ulhead)
+        print(dlhead,'-',dltail)
+        print(ultail,'-',ulhead)
         
         totol_frame_num = 0
         if dltail> ultail:
@@ -453,6 +456,8 @@ class R9UlDlMatch():
                 dltmpList = self.r9_split(dlfile)
                 UlFrameNum= int(ultmpList[-1][16:22])%self.TOTAL_FRAME_NUM
                 DlFrameNum= int(dltmpList[-1][16:22])%self.TOTAL_FRAME_NUM
+                print('UlFrameNum %d',UlFrameNum)
+                print('DlFrameNum %d',DlFrameNum)
                 if abs(UlFrameNum - DlFrameNum)>self.r9_ul_dl_period and abs(DlFrameNum - UlFrameNum +self.TOTAL_FRAME_NUM)>self.r9_ul_dl_period :
                     pass
                 else:
@@ -511,10 +516,19 @@ class R9UlDlMatch():
                         self.r9_copy_to_middle_station(remotfile, spot_beam_id)
                     except:
                         print('[FILE]->%D  COULD NOT BE FOUND',remotfile)
+                        j=j+1
+                        continue
                         #self.logger.error('[FILE]->%D  COULD NOT BE FOUND',remotfile) 
                     if self.r9_rm_old_file_flag == 'TRUE':
-                        os.remove(ulfile+'.jako')
-                        os.remove(dlfile+'.jako')
+                        try:
+                            if tmpfile[0] == 'n' or tmpfile[0] == 'N':
+                                os.remove(ulfile+'.txt')
+                                os.remove(dlfile+'.txt')
+                            else:
+                                os.remove(ulfile+'.jako')
+                                os.remove(dlfile+'.jako')
+                        except:
+                            pass
                     match_flag =1 
                     break
                 j=j+1
